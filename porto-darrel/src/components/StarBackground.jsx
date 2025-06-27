@@ -54,8 +54,21 @@ export const StarBackground = () => {
     setClouds(newClouds);
   };
 
+  // Virgo di pojok kiri atas (10-40%)
+  const virgoConstellation = [
+    { x: 12, y: 10 },
+    { x: 18, y: 16 },
+    { x: 24, y: 14 },
+    { x: 30, y: 20 },
+    { x: 36, y: 28 }, // Spica
+    { x: 42, y: 22 },
+    { x: 48, y: 30 },
+  ];
+
+
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+      {/* Stars */}
       {stars.map((star) => (
         <div
           key={star.id}
@@ -94,6 +107,21 @@ export const StarBackground = () => {
           }}
         />
       ))}
+
+            {/* Virgo Constellation - Elegan & Minimal */}
+      <svg
+        className="absolute top-0 left-0 w-full h-full"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <polyline
+          points={virgoConstellation.map(p => `${p.x},${p.y}`).join(" ")}
+          fill="none"
+          stroke="rgba(255,255,255,0.15)"
+          strokeWidth="0.2"
+        />
+      </svg>
+
     </div>
   );
 };
