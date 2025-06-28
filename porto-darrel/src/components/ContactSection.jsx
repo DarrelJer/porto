@@ -8,6 +8,9 @@ import {
   Twitch,
   Twitter,
 } from "lucide-react";
+
+import { FaSpotify } from "react-icons/fa";
+
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
@@ -93,17 +96,17 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
+                <a href="https://www.linkedin.com/in/darreljer/" target="_blank">
                   <Linkedin />
                 </a>
                 <a href="#" target="_blank">
                   <Twitter />
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://www.instagram.com/DarrelJer/" target="_blank">
                   <Instagram />
                 </a>
-                <a href="#" target="_blank">
-                  <Twitch />
+                <a href="https://open.spotify.com/user/darreljeremiah7?si=e7180b37269e4a4a" target="_blank">
+                  <FaSpotify className="w-6 h-6 " />
                 </a>
               </div>
             </div>

@@ -55,15 +55,16 @@ export const StarBackground = () => {
   };
 
   // Virgo di pojok kiri atas (10-40%)
-  const virgoConstellation = [
-    { x: 12, y: 10 },
-    { x: 18, y: 16 },
-    { x: 24, y: 14 },
-    { x: 30, y: 20 },
-    { x: 36, y: 28 }, // Spica
-    { x: 42, y: 22 },
-    { x: 48, y: 30 },
-  ];
+//   const virgoConstellation = [
+//   { x: 10, y: 12 },  // Vindemiatrix
+//   { x: 18, y: 18 },  // Heze
+//   { x: 22, y: 25 },  // Zaniah
+//   { x: 28, y: 30 },  // Porrima
+//   { x: 36, y: 35 },  // Auva
+//   { x: 44, y: 40 },  // Spica (paling terang)
+//   { x: 52, y: 48 },  // Syrma
+// ];
+
 
 
   return (
@@ -107,9 +108,9 @@ export const StarBackground = () => {
           }}
         />
       ))}
+      
 
-            {/* Virgo Constellation - Elegan & Minimal */}
-      <svg
+      {/* <svg
         className="absolute top-0 left-0 w-full h-full"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
@@ -120,7 +121,7 @@ export const StarBackground = () => {
           stroke="rgba(255,255,255,0.15)"
           strokeWidth="0.2"
         />
-      </svg>
+      </svg> */}
 
     </div>
   );

@@ -8,7 +8,7 @@ const skills = [
   { name: "Jira", logo: "/logos/Jira.png" },
   { name: "MySQL", logo: "/logos/MySQL.png" },
   { name: "PostgreSQL", logo: "/logos/postgre.png" },
-  { name: "PowerBI", logo: "/logos/powerBI.png" },
+  { name: "Power BI", logo: "/logos/powerBI.png" },
   { name: "Python", logo: "/logos/python.png" },
   { name: "React", logo: "/logos/react.png" },
   { name: "Vue", logo: "/logos/Vue.png" },

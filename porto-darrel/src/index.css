@@ -71,6 +71,18 @@
   }
 }
 
+@keyframes virgo-pulse {
+  0%, 100% {
+    opacity: 0.9;
+    r: 0.7;
+  }
+  50% {
+    opacity: 0.4;
+    r: 1;
+  }
+}
+
+
 @layer base {
   :root {
     --background: 210 40% 98%;
@@ -130,6 +142,11 @@
     max-width: 1400px;
   }
 }
+
+@utility virgo-star {
+  animation: virgo-pulse 3s ease-in-out infinite;
+}
+
 
 @utility cloud {
   @apply absolute bg-white rounded-full;

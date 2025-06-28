@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: "Anime Dataset Analysis",
     description: "Analysis of the Factors Influencing the Rating and Sales of an Anime to Identify the Underlying Patterns of Anime Success Based on Data.",
-    image: "/projects/project1.png",
+    image: "/projects/silicon balpen.pdf",
     tags: ["Machine Learning", "Data Science"],
     githubUrl: "#",
   },
@@ -16,17 +16,44 @@ const projects = [
     title: "SiTrack",
     description:
       "Trucking Information System for PT.Glorious Interbuana to support their trucking operations",
-    image: "/projects/project2.png",
-    tags: ["Web Dev", "PM", "System Analysis"],
-    githubUrl: "#",
+    image: "/projects/SiTrackPPT.pdf",
+    tags: ["Web Dev", "Scrum Master", "Product Development"],
+    githubUrl: "https://gitlab.cs.ui.ac.id/propensi-2024-2025-genap/kelas-b/b03-voc-be",
   },
   {
     id: 3,
     title: "Knowledge Management System Proposal",
     description:
       "Designed a Knowledge Management System for TSA UI to enhance information sharing and collaboration.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    image: "/projects/KMPPT.pdf",
+    tags: ["Figma", "Business Analyst"],
+    githubUrl: "#",
+  },
+  {
+    id: 4,
+    title: "Verdix: ICT Integration for Farmers Proposal",
+    description:
+      "A project proposal to develop an ICT solution for farmers to improve their productivity and income using AI and Plant Genetics Data.",
+    image: "/projects/Verdix.pdf",
+    tags: ["Product Development", "Sustainability" ],
+    githubUrl: "#",
+  },
+  {
+    id: 5,
+    title: "Energy Consumption Efficiency Classification",
+    description:
+      "Classify energy consumption efficiency of industry using machine learning.",
+    image: "/inprogress.jpg",
+    tags: ["Machine Learning", "Data Analysis" ],
+    githubUrl: "#",
+  },
+  {
+    id: 6,
+    title: "Illegal Mining Detection ",
+    description:
+      "Detect illegal mining activities using satellite imagery from GEE and machine learning model.",
+    image: "/inprogress.jpg",
+    tags: ["Machine Learning", "Data Analysis" ],
     githubUrl: "#",
   },
 ];
@@ -51,9 +78,7 @@ export const ProjectSection = () => {
               key={key}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
               onClick={() => {
-                if (project.id === 1) setActiveModal(project.id);
-                if (project.id === 2) setActiveModal(project.id);
-                if (project.id === 3) setActiveModal(project.id);
+                setActiveModal(project.id);
               }}
             >
               <div className="h-48 overflow-hidden">
@@ -93,7 +118,7 @@ export const ProjectSection = () => {
           ))}
         </div>
 
-          {activeModal === 1 && (
+        {activeModal === 1 && (
           <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center transition-opacity">
 
             <div className="bg-[#131323] w-full max-w-4xl rounded-lg shadow-lg p-6 relative">
@@ -135,7 +160,61 @@ export const ProjectSection = () => {
               <h3 className="text-xl font-semibold mb-4">SiTrack – Details</h3>
 
               <iframe
-                src="/projects/silicon balpen.pdf" 
+                src="/projects/SiTrackPPT.pdf" 
+                className="w-full h-[70vh]"
+                frameBorder="0"
+              ></iframe>
+
+              <p className="mt-4 text-sm text-muted-foreground">
+                This is a detailed project presentation. You can scroll to read more about this project, the website isn't open for public use.
+              </p>
+            </div>
+          </div>
+        )}
+
+        {activeModal === 3 && (
+          <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center transition-opacity">
+
+            <div className="bg-[#131323] w-full max-w-4xl rounded-lg shadow-lg p-6 relative">
+
+              <button
+                onClick={() => setActiveModal(null)}
+                className="absolute top-2 right-2 text-muted-foreground hover:text-primary"
+              >
+                ✕
+              </button>
+
+              <h3 className="text-xl font-semibold mb-4">KMS for TSA UI – Details</h3>
+
+              <iframe
+                src="/projects/KMPPT.pdf" 
+                className="w-full h-[70vh]"
+                frameBorder="0"
+              ></iframe>
+
+              <p className="mt-4 text-sm text-muted-foreground">
+                This is a detailed project presentation. You can scroll to read more about this project. (Prototype link at the end)
+              </p>
+            </div>
+          </div>
+        )}
+
+        {activeModal === 4 && (
+          <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center transition-opacity">
+
+            <div className="bg-[#131323] w-full max-w-4xl rounded-lg shadow-lg p-6 relative">
+
+              <button
+                onClick={() => setActiveModal(null)}
+                className="absolute top-2 right-2 text-muted-foreground hover:text-primary"
+              >
+                ✕
+              </button>
+
+              <h3 className="text-xl font-semibold mb-4">Verdix ICT Project – Details</h3>
+
+              <iframe
+                src="/projects/Verdix.pdf" 
                 className="w-full h-[70vh]"
                 frameBorder="0"
               ></iframe>
