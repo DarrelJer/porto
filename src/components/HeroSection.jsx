@@ -11,7 +11,7 @@ export const HeroSection = () => {
           <div className="flex justify-center opacity-0 animate-fade-in">
             <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full bg-primary/20 p-1">
               <img
-                src="/public/apaini.jpg"
+                src="/apaini.jpg"
                 alt="Profile"
                 className="w-full h-full object-cover rounded-full border-4 border-background shadow-lg"
               />
