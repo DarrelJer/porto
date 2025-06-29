@@ -40,6 +40,15 @@ const projects = [
   },
   {
     id: 5,
+    title: "Cuffeine Business Plan",
+    description:
+      "Cuffeine is an innovative business in the food and beverage industry that focuses on delivering a personalized coffee experience.",
+    image: "/projects/Cuffeine.pdf",
+    tags: ["Machine Learning", "Data Analysis" ],
+    githubUrl: "#",
+  },
+  {
+    id: 6,
     title: "Energy Consumption Efficiency Classification",
     description:
       "Classify energy consumption efficiency of industry using machine learning.",
@@ -48,7 +57,7 @@ const projects = [
     githubUrl: "#",
   },
   {
-    id: 6,
+    id: 7,
     title: "Illegal Mining Detection ",
     description:
       "Detect illegal mining activities using satellite imagery from GEE and machine learning model.",
@@ -69,7 +78,7 @@ export const ProjectSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Some projects I've worked on (Click on the project to see more details).
+          Welcome to my Project Collection. Here you’ll find a selection of my work. Explore my projects to learn more about what I do. (Click on the project to see more details).
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -226,12 +235,39 @@ export const ProjectSection = () => {
           </div>
         )}
 
+        {activeModal === 5 && (
+          <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center transition-opacity">
+
+            <div className="bg-[#131323] w-full max-w-4xl rounded-lg shadow-lg p-6 relative">
+
+              <button
+                onClick={() => setActiveModal(null)}
+                className="absolute top-2 right-2 text-muted-foreground hover:text-primary"
+              >
+                ✕
+              </button>
+
+              <h3 className="text-xl font-semibold mb-4">Cuffeine Pitch Deck – Details</h3>
+
+              <iframe
+                src="/projects/Cuffeine.pdf" 
+                className="w-full h-[70vh]"
+                frameBorder="0"
+              ></iframe>
+
+              <p className="mt-4 text-sm text-muted-foreground">
+                This is a detailed project presentation. You can scroll to read more about this project.
+              </p>
+            </div>
+          </div>
+        )}
+
 
         <div className="text-center mt-12">
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/DarrelJer"
           >
             Check My Github <ArrowRight size={16} />
           </a>
