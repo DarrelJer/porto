@@ -26,7 +26,7 @@ const projects = [
     description:
       "Designed a Knowledge Management System for TSA UI to enhance information sharing and collaboration.",
     image: "/projects/KMPPT.pdf",
-    tags: ["Figma", "Business Analyst"],
+    tags: ["Figma", "Business Analysis"],
     githubUrl: "#",
   },
   {
@@ -58,11 +58,10 @@ const projects = [
   },
   {
     id: 7,
-    title: "Illegal Mining Detection ",
-    description:
-      "Detect illegal mining activities using satellite imagery from GEE and machine learning model.",
-    image: "/inprogress.jpg",
-    tags: ["Machine Learning", "Data Analysis" ],
+    title: "Curriculum Management System",
+    description: "A system proposal that analyzes a curriculum management business process ",
+    image: "/projects/ANAP.pdf",
+    tags: ["System Analysis", "Business Analysis"],
     githubUrl: "#",
   },
 ];
@@ -257,6 +256,33 @@ export const ProjectSection = () => {
 
               <p className="mt-4 text-sm text-muted-foreground">
                 This is a detailed project presentation. You can scroll to read more about this project.
+              </p>
+            </div>
+          </div>
+        )}
+
+        {activeModal === 7 && (
+          <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center transition-opacity">
+
+            <div className="bg-[#131323] w-full max-w-4xl rounded-lg shadow-lg p-6 relative">
+
+              <button
+                onClick={() => setActiveModal(null)}
+                className="absolute top-2 right-2 text-muted-foreground hover:text-primary"
+              >
+                ✕
+              </button>
+
+              <h3 className="text-xl font-semibold mb-4">Curriculum Management System Proposal – Details</h3>
+
+              <iframe
+                src="/projects/ANAP.pdf" 
+                className="w-full h-[70vh]"
+                frameBorder="0"
+              ></iframe>
+
+              <p className="mt-4 text-sm text-muted-foreground">
+                This is a detailed project system proposal. You can scroll to read more about this project.
               </p>
             </div>
           </div>

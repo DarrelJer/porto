@@ -59,24 +59,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:darreljeremiah7@gmail.com"
+                    href="mailto: darreljeremiah7@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     darreljeremiah7@gmail.com
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />{" "}
-                </div>
-                <div>
-                  <h4 className="font-medium"> Phone</h4>
-                  <a
-                    href="tel:+11234567890"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    +62 81513419570
                   </a>
                 </div>
               </div>
@@ -87,7 +73,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Jawa Barat, Indonesia
+                    Jakarta, Indonesia
                   </a>
                 </div>
               </div>
@@ -98,9 +84,6 @@ export const ContactSection = () => {
               <div className="flex space-x-4 justify-center">
                 <a href="https://www.linkedin.com/in/darreljer/" target="_blank">
                   <Linkedin />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitter />
                 </a>
                 <a href="https://www.instagram.com/DarrelJer/" target="_blank">
                   <Instagram />
